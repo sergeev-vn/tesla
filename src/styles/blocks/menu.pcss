@@ -1,0 +1,31 @@
+.menu {
+  background-color: $secondary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $zi-menu;
+  padding: 160px 0;
+}
+
+.menu__list {
+  min-width: 368px;
+  display: inline-block;
+}
+
+.menu__item {
+  border-bottom: 3px solid $red;
+  padding-bottom: 14px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu__link {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}

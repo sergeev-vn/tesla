@@ -1,6 +1,6 @@
 header.header
   .header__wrapper
-    .container
+    .container.header__container
         .header__top
           .header__logo
             a(href="#").logo
@@ -26,3 +26,17 @@ header.header
       li.slider__item(
         style=`background-image: url(${require("./images/content/slider-img-3.jpg")})`
       )
+  .header__menu
+      nav.menu
+        .container
+          ul.menu__list
+            li.menu__item
+              a(href='#').menu__link Узнать цену
+            li.menu__item
+              a(href='#').menu__link Характеристики
+            li.menu__item
+              a(href='#').menu__link Тест Драйв
+            li.menu__item
+              a(href='#').menu__link Новости
+            li.menu__item
+              a(href='#').menu__link Контакты

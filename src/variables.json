@@ -12,5 +12,7 @@
   "speed": ".3s",
 
   "zi-header-content": "5",
-  "zi-slider-dots": "10"
+  "zi-slider-dots": "10",
+  "zi-menu": "999",
+  "zi-menu-btn": "1500"
 }
