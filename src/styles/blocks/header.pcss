@@ -1,8 +1,27 @@
-.header {
+.header__wrapper {
   height: 100vh;
-  background-color:  rgba(0, 0, 0, 0.3);
-  background-image: url(~images/bg/header-bg-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  position: absolute;
+  z-index: $zi-header-content;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  right: 0;
+}
+
+.header__top {
+  padding-top: 35px;
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-family: Roboto;
+  font-size: 96px;
+  line-height: 112px;
+  margin-bottom: 40px;
+}
+
+.header__desc {
+  width: 284px;
+  margin-bottom: 25px;
 }

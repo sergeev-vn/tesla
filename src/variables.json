@@ -1,7 +1,16 @@
 {
-  "main-color": "#000",
+  "main": "#FFFFFF",
+  "secondary": "#0B0B0B",
+  "red": "#B70021",
+  "darkred": "#690102",
+
   "bp-desktop-hd": "1800px",
-  "bp-desktop": "1200px",
+  "bp-desktop" : "1200px",
   "bp-tablets": "768px",
-  "bp-phones": "480px"
+  "bp-phones": "480px",
+  
+  "speed": ".3s",
+
+  "zi-header-content": "5",
+  "zi-slider-dots": "10"
 }

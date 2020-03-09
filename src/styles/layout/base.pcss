@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   @include desktop {
     font-size: 16px;
@@ -12,12 +16,12 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.42;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $main-color;
+  color: $main;
 }
 
 .wrapper {
@@ -28,10 +32,9 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1480px;
+  max-width: 1200px;
   width: 90%;
-  // width: 1490px;
-  
+
   @include phones {
     width: 85%;
   }
@@ -40,10 +43,6 @@ body {
 button {
   border: 0;
   cursor: pointer;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 ul {
