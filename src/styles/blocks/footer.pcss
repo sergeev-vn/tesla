@@ -1,0 +1,25 @@
+.footer {
+  background-color: $darkred;
+  padding: 83px 0 20px;
+}
+
+.footer__btn {
+  margin-bottom: 83px;
+  text-align: center;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: center;
+}
+
+.sitemap__link {
+  font-weight: bold;
+}
+
+.sitemap__item + .sitemap__item {
+  &::before {
+    content: '|';
+    margin: 0 14px;
+  }
+}
