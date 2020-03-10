@@ -1,10 +1,19 @@
 .specs {
   padding: 105px 0 100px;
+
+  @include big-phones {
+    padding: 50px 0 0px;
+  }
 }
 
 .specs__list {
   display: flex;
-  justify-content: space-between;
-  padding-left: 96px;
-  padding-right: 32px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1073px;
+  margin: 0 auto;
+}
+
+.specs__item {
+  margin: 0 15px 60px;
 }
