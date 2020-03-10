@@ -1,16 +1,25 @@
 .footer {
   background-color: $darkred;
   padding: 83px 0 20px;
+
+  @include big-phones {
+    padding: 40px 0 20px;
+  }
 }
 
 .footer__btn {
   margin-bottom: 83px;
   text-align: center;
+
+  @include big-phones {
+    margin-bottom: 40px;
+  }
 }
 
 .sitemap {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sitemap__link {
@@ -21,5 +30,12 @@
   &::before {
     content: '|';
     margin: 0 14px;
+  }
+
+  @include big-phones {
+    &::before {
+      content: '';
+      margin: 0 15px;
+    }
   }
 }
