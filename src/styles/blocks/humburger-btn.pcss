@@ -1,5 +1,5 @@
 .humburger-btn {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid $main;
@@ -8,20 +8,34 @@
   justify-content: space-between;
   align-items: center;
   padding: 17px 0;
+  outline:none;
+  transition: $speed;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  @include big-phones {
+    align-self: flex-end;
+  }
 }
 
 .humburger-btn.active {
-  position: fixed;
-  right: 10%;
+  position: absolute;
+  right: 0;
   z-index: $zi-menu-btn;
   border: none;
-  width: 50px;
-  height: 50px;
   padding: 0;
-  transition: transform $speed;
+  transition: none;
+
+  &:hover {
+    background: none;
+  }
 
   .humburger-btn__row {
     position: absolute;
+    top: 50%;
+
   }
 
   .humburger-btn__row {
@@ -48,4 +62,5 @@
   height: 2px;
   width: 36px;
   background-color: $main;
+  transition: transform $speed linear;
 }
