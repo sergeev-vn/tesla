@@ -11,7 +11,7 @@
 <img src='http://lessons.sergeev.press/tesla-preview.png'>
 </p>
 
-[**Демо**](https://sergeev-vn.github.io/teslap/)
+[**Демо**](https://sergeev-vn.github.io/teslp/)
 
 ## Чтобы развернуть проект необходимо:
 > Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/), а так же
