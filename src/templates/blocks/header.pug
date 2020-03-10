@@ -18,26 +18,24 @@ header.header
               button(type='button').btn Хочу тест драйв
   .header__slider
     ul.slider
-      li.slider__item(
-        style=`background-image: url(${require("./images/content/slider-img-1.jpg")})`
-      )
-      li.slider__item(
-        style=`background-image: url(${require("./images/content/slider-img-2.jpg")})`
-      )
-      li.slider__item(
-        style=`background-image: url(${require("./images/content/slider-img-3.jpg")})`
-      )
+      - var sldierImages = [
+      -  `background-image: url(${require("./images/content/slider-img-1.jpg")})`,
+      -  `background-image: url(${require("./images/content/slider-img-2.jpg")})`,
+      -  `background-image: url(${require("./images/content/slider-img-3.jpg")})`
+      - ]
+      each sliderImg in sldierImages
+        li.slider__item(style=sliderImg)
   .header__menu
     nav.menu
       .container
         ul.menu__list
-          li.menu__item
-            a(href='#').menu__link Узнать цену
-          li.menu__item
-            a(href='#').menu__link Характеристики
-          li.menu__item
-            a(href='#').menu__link Тест Драйв
-          li.menu__item
-            a(href='#').menu__link Новости
-          li.menu__item
-            a(href='#').menu__link Контакты
+          - var menuList = [
+          -  { title: 'Узнать цену', url: '#' },
+          -  { title: 'Характеристики', url: '#' },
+          -  { title: 'Тест Драйв', url: '#' },
+          -  { title: 'Новости', url: '#' },
+          -  { title: 'Контакты', url: '#' }
+          - ]
+          each item in menuList
+            li.menu__item
+              a(href=item.url).menu__link #{item.title}

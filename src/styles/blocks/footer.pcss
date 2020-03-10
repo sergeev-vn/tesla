@@ -15,27 +15,3 @@
     margin-bottom: 40px;
   }
 }
-
-.sitemap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.sitemap__link {
-  font-weight: bold;
-}
-
-.sitemap__item + .sitemap__item {
-  &::before {
-    content: '|';
-    margin: 0 14px;
-  }
-
-  @include big-phones {
-    &::before {
-      content: '';
-      margin: 0 15px;
-    }
-  }
-}

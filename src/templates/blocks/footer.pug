@@ -1,20 +1,19 @@
 footer.footer
   .container
     .footer__btn
-      button(type='button').btn Хочу тест драйв
+      button(type='button').btn.btn--black-hover Хочу тест драйв
     .footer__links
       ul.sitemap
         li.sitemap__item
-          .sitemap__link Tesla © 2020
-        li.sitemap__item
-          a(href="#").sitemap__link Privacy & Legal
-        li.sitemap__item
-          a(href="#").sitemap__link Contact
-        li.sitemap__item
-          a(href="#").sitemap__link Careers
-        li.sitemap__item
-          a(href="#").sitemap__link Get Newsletter 
-        li.sitemap__item
-          a(href="#").sitemap__link Forums
-        li.sitemap__item
-          a(href="#").sitemap__link Locations
+          .sitemap__item-text Tesla © 2020
+        - var sitemapLinks = [
+        -  { title: 'Privacy & Legal', url: '#' },
+        -  { title: 'Contact', url: '#' },
+        -  { title: 'Careers', url: '#' },
+        -  { title: 'Get Newsletter ', url: '#' },
+        -  { title: 'Forums', url: '#' },
+        -  { title: 'Locations', url: '#' }
+        - ]
+        each item in sitemapLinks
+          li.sitemap__item
+              a(href=item.url).sitemap__link #{item.title}
