@@ -1,8 +1,18 @@
 $(function() {
   $('.humburger-btn').on('click', () => {
-    $('.header__menu').show();
-    $('.humburger-btn').addClass('active');
-    $('.header__wrapper').css('z-index', 'initial');
+    
+    $('.humburger-btn').hasClass('active')
+      ? (
+        $('.header__wrapper').css('z-index', ''),
+        $('.header__menu').hide(),
+        $('.humburger-btn').removeClass('active'),
+        $('body').css('overflow', '')
+      )
+      : (
+        $('.header__wrapper').css('z-index', 'initial'),
+        $('.header__menu').show(300),
+        $('.humburger-btn').addClass('active'),
+        $('body').css('overflow', 'hidden')
+      )
   });
-
 });

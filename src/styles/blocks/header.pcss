@@ -1,3 +1,11 @@
+.header {
+  @include big-phones {
+    height: 100vh;
+    background-image: url(~images/content/header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 .header__wrapper {
   height: 100vh;
   position: absolute;
@@ -7,8 +15,17 @@
   right: 0;
 }
 
+.header__wrap-desc {
+  @include big-phones {
+    padding-bottom: 100px;
+  }
+}
+
 .header__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .header__top {
@@ -16,6 +33,38 @@
   margin-bottom: 29px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @include big-phones {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+}
+
+.header__content {
+  @include big-phones {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.header__slider {
+  @include big-phones {
+    display: none;
+  }
+}
+
+.header__logo {
+  padding-right: 10%;
+
+  @include big-phones {
+    order: 1;
+    padding-right: 0;
+    margin-top: 15px;
+  }
 }
 
 .header__title {
@@ -23,11 +72,19 @@
   font-size: 96px;
   line-height: 112px;
   margin-bottom: 40px;
+
+  @include big-phones {
+    font-size: 65px;
+  }
 }
 
 .header__desc {
   width: 284px;
   margin-bottom: 25px;
+
+  @include big-phones {
+    margin: 0 auto 50px;
+  }
 }
 
 .header__menu {
