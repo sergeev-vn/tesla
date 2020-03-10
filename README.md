@@ -8,7 +8,7 @@
 + jQuery
 
 <p align='center'>
-<img src='http://lessons.sergeev.press/'>
+<img src='http://lessons.sergeev.press/tesla-preview.png'>
 </p>
 
 [**Демо**](https://sergeev-vn.github.io/teslap/)
