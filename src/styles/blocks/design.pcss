@@ -1,18 +1,36 @@
 .design {
   padding-bottom: 100px;
+  
+  @include big-phones {
+    padding-bottom: 50px;
+  }
 }
 
 .design__image {
   margin-bottom: 100px;
+
+  @include big-phones {
+    margin-bottom: 50px;
+  }
 }
 
 .design__desc-list {
   display: flex;
   justify-content: space-between;
+
+  @include big-phones {
+    flex-direction: column;
+  }
 }
 
 .design__desc-item {
   max-width: 572px;
+
+  @include big-phones {
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+  }
 }
 
 .design__desc-item-num {
@@ -21,5 +39,10 @@
 
 .design__desc-item-text {
   padding-right: 16px;
-  margin-left: 105px;
+  margin-left: 18%;
+
+  @include big-phones {
+    padding-right: 0;
+    margin-left: 10%;
+  }
 }
